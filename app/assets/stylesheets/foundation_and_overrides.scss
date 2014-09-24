@@ -1,3 +1,4 @@
+@import 'site';
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
@@ -103,11 +104,11 @@ $include-html-global-classes: $include-html-classes;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+$white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
@@ -121,7 +122,7 @@ $include-html-global-classes: $include-html-classes;
 // $tuatara     : #444444;
 // $oil         : #333333;
 // $jet         : #222222;
-// $black       : #000000;
+$black       : #000000;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -1357,10 +1358,10 @@ $magellan-padding: 0 !important;
 // 34. Top Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-top-bar-classes: $include-html-classes;
+$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: $white-smoke;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1369,7 +1370,7 @@ $magellan-padding: 0 !important;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
@@ -1381,7 +1382,7 @@ $magellan-padding: 0 !important;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
+$topbar-link-color: $black;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
@@ -1390,9 +1391,9 @@ $magellan-padding: 0 !important;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-hover: #272727;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-hover: $main-link-bg-color;
+$topbar-link-bg-active: $main-link-bg-color;
+$topbar-link-bg-active-hover: scale-color($main-link-bg-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
@@ -1428,8 +1429,8 @@ $magellan-padding: 0 !important;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-sticky-class: ".sticky";
+$topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 // 36. Visibility Classes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
