@@ -5,3 +5,16 @@
 .container {
   height: 100%;
 }
+
+.top-bar {
+  .name a {
+    font-size: 1.3rem;
+  }
+  .top-bar-section {
+    .right {
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
